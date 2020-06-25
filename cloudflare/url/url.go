@@ -1,36 +1,38 @@
 package url
 
-import . "github.com/hpidcock/wgcf/util"
+import (
+	"github.com/hpidcock/wgcf/util"
+)
 
 var apiVersion = "v0a884"
-var apiEndpoint = JoinUrls("https://api.cloudflareclient.com", apiVersion)
+var apiEndpoint = util.JoinUrls("https://api.cloudflareclient.com", apiVersion)
 
-var RegUrl = JoinUrls(apiEndpoint, "reg")
-var ClientConfigUrl = JoinUrls(apiEndpoint, "client_config")
+var RegUrl = util.JoinUrls(apiEndpoint, "reg")
+var ClientConfigUrl = util.JoinUrls(apiEndpoint, "client_config")
 
 var TermsUrl = "https://www.cloudflare.com/application/terms/"
 
 // returns DeviceData
 func GetDeviceUrl(deviceId string) string {
-	return JoinUrls(RegUrl, deviceId)
+	return util.JoinUrls(RegUrl, deviceId)
 }
 
 // returns AccountData
 func GetAccountUrl(deviceId string) string {
-	return JoinUrls(GetDeviceUrl(deviceId), "account")
+	return util.JoinUrls(GetDeviceUrl(deviceId), "account")
 }
 
 // returns BoundDevicesData
 func GetBoundDevicesUrl(deviceId string) string {
-	return JoinUrls(GetAccountUrl(deviceId), "devices")
+	return util.JoinUrls(GetAccountUrl(deviceId), "devices")
 }
 
 // creates and returns a new license key that replaces the old key
 func GetRecreateLicenseKeyUrl(deviceId string) string {
-	return JoinUrls(GetAccountUrl(deviceId), "license")
+	return util.JoinUrls(GetAccountUrl(deviceId), "license")
 }
 
 // allows operating on devices bound to this device's account
 func GetBoundDeviceUrl(deviceId string, targetDeviceId string) string {
-	return JoinUrls(GetAccountUrl(deviceId), "reg", targetDeviceId)
+	return util.JoinUrls(GetAccountUrl(deviceId), "reg", targetDeviceId)
 }

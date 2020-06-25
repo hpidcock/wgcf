@@ -2,11 +2,13 @@ package trace
 
 import (
 	"fmt"
-	"github.com/spf13/cobra"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"strings"
+
+	"github.com/spf13/cobra"
+
 	. "github.com/hpidcock/wgcf/cmd/util"
 	"github.com/hpidcock/wgcf/util"
 )

@@ -3,6 +3,10 @@ package cmd
 import (
 	"errors"
 	"log"
+
+	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
+
 	"github.com/hpidcock/wgcf/cmd/generate"
 	"github.com/hpidcock/wgcf/cmd/register"
 	"github.com/hpidcock/wgcf/cmd/status"
@@ -11,9 +15,6 @@ import (
 	. "github.com/hpidcock/wgcf/cmd/util"
 	"github.com/hpidcock/wgcf/config"
 	"github.com/hpidcock/wgcf/util"
-
-	"github.com/spf13/cobra"
-	"github.com/spf13/viper"
 )
 
 var cfgFile string

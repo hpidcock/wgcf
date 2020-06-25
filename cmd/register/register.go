@@ -2,11 +2,13 @@ package register
 
 import (
 	"fmt"
+	"log"
+
 	"github.com/manifoldco/promptui"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"log"
+
 	"github.com/hpidcock/wgcf/cloudflare/api"
 	"github.com/hpidcock/wgcf/cloudflare/url"
 	. "github.com/hpidcock/wgcf/cmd/util"

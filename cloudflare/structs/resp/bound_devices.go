@@ -2,6 +2,7 @@ package resp
 
 import (
 	"time"
+
 	"github.com/hpidcock/wgcf/cloudflare/structs/request"
 )
 

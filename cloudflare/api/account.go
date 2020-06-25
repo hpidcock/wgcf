@@ -3,6 +3,7 @@ package api
 import (
 	"bytes"
 	"encoding/json"
+
 	"github.com/hpidcock/wgcf/cloudflare/structs/request"
 	"github.com/hpidcock/wgcf/cloudflare/structs/resp"
 	"github.com/hpidcock/wgcf/cloudflare/url"

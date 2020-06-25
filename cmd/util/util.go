@@ -1,10 +1,12 @@
 package util
 
 import (
-	"github.com/pkg/errors"
-	"github.com/spf13/viper"
 	"log"
 	"strings"
+
+	"github.com/pkg/errors"
+	"github.com/spf13/viper"
+
 	"github.com/hpidcock/wgcf/cloudflare/api"
 	"github.com/hpidcock/wgcf/cloudflare/structs/request"
 	"github.com/hpidcock/wgcf/cloudflare/structs/resp"

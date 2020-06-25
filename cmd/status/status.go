@@ -1,9 +1,11 @@
 package status
 
 import (
+	"log"
+
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	"log"
+
 	"github.com/hpidcock/wgcf/cloudflare/api"
 	. "github.com/hpidcock/wgcf/cmd/util"
 	"github.com/hpidcock/wgcf/util"

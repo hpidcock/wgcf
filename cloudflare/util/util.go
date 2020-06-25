@@ -1,8 +1,10 @@
 package util
 
 import (
-	"github.com/pkg/errors"
 	"time"
+
+	"github.com/pkg/errors"
+
 	"github.com/hpidcock/wgcf/cloudflare/structs/resp"
 )
 
