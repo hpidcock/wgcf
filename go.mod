@@ -3,6 +3,7 @@ module github.com/hpidcock/wgcf
 go 1.14
 
 require (
+	github.com/adrg/xdg v0.2.1
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/json-iterator/go v1.1.9 // indirect
 	github.com/lunixbochs/vtclean v1.0.0 // indirect

@@ -4,6 +4,7 @@ import (
 	"errors"
 	"log"
 
+	"github.com/adrg/xdg"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
@@ -38,8 +39,13 @@ func Execute() error {
 }
 
 func init() {
+	defaultConfig, err := xdg.ConfigFile("wgcf/config.toml")
+	if err != nil {
+		log.Fatal(util.GetErrorMessage(err))
+	}
+
 	cobra.OnInitialize(initConfig)
-	RootCmd.PersistentFlags().StringVar(&cfgFile, "config", "wgcf-account.toml", "Configuration file")
+	RootCmd.PersistentFlags().StringVar(&cfgFile, "config", defaultConfig, "Configuration file")
 	RootCmd.AddCommand(register.Cmd)
 	RootCmd.AddCommand(update.Cmd)
 	RootCmd.AddCommand(generate.Cmd)
