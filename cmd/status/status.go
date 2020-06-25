@@ -4,9 +4,9 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"log"
-	"wgcf/cloudflare/api"
-	. "wgcf/cmd/util"
-	"wgcf/util"
+	"github.com/hpidcock/wgcf/cloudflare/api"
+	. "github.com/hpidcock/wgcf/cmd/util"
+	"github.com/hpidcock/wgcf/util"
 )
 
 var shortMsg = "Prints the status of the current Cloudflare Warp device"

@@ -7,8 +7,8 @@ import (
 	"log"
 	"net/http"
 	"strings"
-	. "wgcf/cmd/util"
-	"wgcf/util"
+	. "github.com/hpidcock/wgcf/cmd/util"
+	"github.com/hpidcock/wgcf/util"
 )
 
 var shortMsg = "Prints trace information about the current internet connection"

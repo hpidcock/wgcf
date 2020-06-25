@@ -3,7 +3,7 @@ package util
 import (
 	"github.com/pkg/errors"
 	"time"
-	"wgcf/cloudflare/structs/resp"
+	"github.com/hpidcock/wgcf/cloudflare/structs/resp"
 )
 
 func GetTimestamp() string {

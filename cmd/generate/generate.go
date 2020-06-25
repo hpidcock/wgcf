@@ -5,11 +5,11 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"log"
-	"wgcf/cloudflare/api"
-	. "wgcf/cmd/util"
-	"wgcf/config"
-	"wgcf/util"
-	"wgcf/wireguard"
+	"github.com/hpidcock/wgcf/cloudflare/api"
+	. "github.com/hpidcock/wgcf/cmd/util"
+	"github.com/hpidcock/wgcf/config"
+	"github.com/hpidcock/wgcf/util"
+	"github.com/hpidcock/wgcf/wireguard"
 )
 
 var profileFile string

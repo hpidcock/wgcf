@@ -5,11 +5,11 @@ import (
 	"github.com/spf13/viper"
 	"log"
 	"strings"
-	"wgcf/cloudflare/api"
-	"wgcf/cloudflare/structs/request"
-	"wgcf/cloudflare/structs/resp"
-	"wgcf/config"
-	"wgcf/util"
+	"github.com/hpidcock/wgcf/cloudflare/api"
+	"github.com/hpidcock/wgcf/cloudflare/structs/request"
+	"github.com/hpidcock/wgcf/cloudflare/structs/resp"
+	"github.com/hpidcock/wgcf/config"
+	"github.com/hpidcock/wgcf/util"
 )
 
 func FormatMessage(shortMessage string, longMessage string) string {

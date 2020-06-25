@@ -3,11 +3,11 @@ package api
 import (
 	"bytes"
 	"encoding/json"
-	"wgcf/cloudflare/structs/request"
-	"wgcf/cloudflare/structs/resp"
-	"wgcf/cloudflare/url"
-	"wgcf/cloudflare/util"
-	"wgcf/wireguard"
+	"github.com/hpidcock/wgcf/cloudflare/structs/request"
+	"github.com/hpidcock/wgcf/cloudflare/structs/resp"
+	"github.com/hpidcock/wgcf/cloudflare/url"
+	"github.com/hpidcock/wgcf/cloudflare/util"
+	"github.com/hpidcock/wgcf/wireguard"
 )
 
 func Register(encodedPrivateKey string, deviceModel string) (*resp.RegistrationData, error) {

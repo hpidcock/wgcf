@@ -1,6 +1,6 @@
 package url
 
-import . "wgcf/util"
+import . "github.com/hpidcock/wgcf/util"
 
 var apiVersion = "v0a884"
 var apiEndpoint = JoinUrls("https://api.cloudflareclient.com", apiVersion)
